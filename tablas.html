@@ -8,9 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Sirve para ajustar la pagina dependiendo del dipositivo donde se este usando la página web -->
     <title>Tablas en HTML</title>
-    
+    <!-- titulo de la pagina web -->
 
-    
 </head>
 
 <body>
@@ -38,15 +37,23 @@
         </dd>
     </dl>
     <h2>Ejemplo</h2>
+    <!-- <table>: Es el contenedor principal que le indica al navegador que aquí inicia una tabla -->
+    <!-- border="1": Atributo que le dibuja un borde de 1 píxel alrededor de las celdas (se suele definir con CSS) -->
     <table border="1">
+          <!-- <tr> (Table Row): Crea una fila horizontal dentro de la tabla -->
         <tr>
             <td>Ciudad de Mexico</td>
+              <!-- <td> (Table Data): Crea una celda de información normal (se alinea a la izquierda por defecto) -->
             <td>9.2 millones</td>
+             <!-- <td>: Segunda celda de la misma fila (crea la segunda columna) -->
+            
         </tr>
+         <!-- Segunda fila -->
         <tr>
             <td>Guadalajara</td>
             <td>4.1 millones</td>
         </tr>
+        <!-- Tercera fila -->
         <tr>
             <td>Monterrey</td>
             <td>3.9 millones</td>
@@ -59,10 +66,14 @@
         usarian la etiqueta <em>td</em> con normalidad.
     </p>
     <table border="1">
+        <!-- Fila destinada exclusivamente a los títulos/encabezados de las columnas -->
         <tr>
+            <!-- <th> (Table Header): Celda de encabezado. Pone el texto en NEGRITA y CENTRADO automáticamente -->
             <th>Ciudad</th>
+            <!-- <th>: Encabezado para la columna de la derecha -->
             <th>Cantidad de habitantes</th>
         </tr>
+        <!-- Filas de contenido habitual usando <td> -->
         <tr>
             <td>Ciudad de Mexico</td>
             <td>9.2 millones</td>
@@ -81,11 +92,14 @@
         inmediatamente despues de abrir la etiqueta <em>table</em>.
     </p>
     <table border="1">
+         <!-- <caption>: Define el título o descripción de la tabla. Siempre debe colocarse justo debajo de <table> -->
         <caption>Poblacion de las ciudades mas concurridas de Mexico</caption>
+         <!-- Fila de encabezados con <th> -->
         <tr>
             <th>Ciudad</th>
             <th>Cantidad de habitantes</th>
         </tr>
+         <!-- Filas con datos normales usando <td> -->
         <tr>
             <td>Ciudad de Mexico</td>
             <td>9.2 millones</td>
